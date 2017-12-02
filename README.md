@@ -7,7 +7,7 @@ First tryout with the new official camunda springboot starter pom.
 # API
 
 ## order/
-order a new salami - if too much salamis are ordered a human task is created to inform the customer
+order a new salami - if too much salamis are ordered a human task is created to inform the customer:
 /order/salami
 
 ## stock/
@@ -15,6 +15,6 @@ order a new salami - if too much salamis are ordered a human task is created to 
 get actual stock count:
 GET stock/salami/count
 
-take a salami from the stock
+take a salami from the stock:
 GET /stock/salami
 
