@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="1.8.1">
   <bpmn:process id="ordersalamiprocess" isExecutable="true">
-    <bpmn:startEvent id="StartEvent_1">
+    <bpmn:startEvent id="StartEvent_1" name="New salami order">
       <bpmn:outgoing>SequenceFlow_0nh45bk</bpmn:outgoing>
     </bpmn:startEvent>
     <bpmn:sequenceFlow id="SequenceFlow_0nh45bk" sourceRef="StartEvent_1" targetRef="SubProcess_1dox826" />
@@ -25,7 +25,7 @@
     <bpmn:subProcess id="SubProcess_1dox826">
       <bpmn:incoming>SequenceFlow_0nh45bk</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_0lijr41</bpmn:outgoing>
-      <bpmn:serviceTask id="Task_0heccyj" name="Order some salami" camunda:delegateExpression="${orderSalamiDelegate}">
+      <bpmn:serviceTask id="Task_0heccyj" name="Deliver a salami" camunda:delegateExpression="${orderSalamiDelegate}">
         <bpmn:incoming>SequenceFlow_0zpg7ch</bpmn:incoming>
         <bpmn:outgoing>SequenceFlow_1f3ie68</bpmn:outgoing>
       </bpmn:serviceTask>
@@ -66,7 +66,7 @@
       <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
         <dc:Bounds x="-273" y="-40" width="36" height="36" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="-300" y="-4" width="90" height="20" />
+          <dc:Bounds x="-298" y="-4" width="86" height="12" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="SequenceFlow_0nh45bk_di" bpmnElement="SequenceFlow_0nh45bk">
