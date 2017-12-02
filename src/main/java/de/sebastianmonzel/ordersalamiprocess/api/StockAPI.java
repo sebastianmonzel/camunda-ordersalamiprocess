@@ -1,4 +1,4 @@
-package de.sebastianmonzel.ordersalamiprocess;
+package de.sebastianmonzel.ordersalamiprocess.api;
 
 
 import org.springframework.web.bind.annotation.RequestMapping;
