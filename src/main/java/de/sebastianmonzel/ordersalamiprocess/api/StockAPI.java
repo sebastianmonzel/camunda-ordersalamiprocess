@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class StockAPI {
-
+    
+    // just to simulate stock - use static mechanism with attention
     private static int stockcount = 10;
 
 
