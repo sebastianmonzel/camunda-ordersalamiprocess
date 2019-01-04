@@ -5,6 +5,8 @@ First steps with the camunda spring boot things: https://docs.camunda.org/get-st
 
 ![ordersalamiprocess](orderprocess.png)
 
+German Blogpost: http://sebastianmonzel.de/2017/12/camunda-playground-spring-boot-starter-pom-ausprobiert/
+
 
 # API
 
